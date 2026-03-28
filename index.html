@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operación Hambre </title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<header>
+    <nav class="navbar">
+        <div class="logo">Operación<span>Hambre</span></div>
+
+        <ul class="nav-links">
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#menu">Menú</a></li>
+            <li><a href="#pedido">Pedido</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+
+<!-- HERO -->
+<section id="inicio" class="hero">
+    <div class="hero-container">
+
+        <div class="hero-text">
+            <h1> Operación Hambre </h1>
+            <p>
+                Somos una empresa que busca atacar el hambre y no tu bolsillo 
+            </p>
+            <a href="#menu" class="btn-primary">Ver menú</a>
+        </div>
+
+        <div class="hero-image">
+            <img 
+                src="https://images.unsplash.com/photo-1550547660-d9450f859349?auto=format&fit=crop&w=800" 
+                alt="Hamburguesa artesanal con queso, lechuga y pan dorado">
+        </div>
+
+    </div>
+</section>
+
+<!-- MENÚ -->
+<section id="menu" class="section-container">
+    <h2> Menú</h2>
+
+    <div class="menu-grid">
+
+        <article class="category">
+            <h3>Hamburguesas</h3>
+            <table>
+                <tr><td>Táctica</td><td>$14k</td></tr>
+                <tr><td>Supremacía</td><td>$18k</td></tr>
+                <tr><td>Impacto Doble</td><td>$22k</td></tr>
+            </table>
+        </article>
+
+        <article class="category">
+            <h3>Picadas</h3>
+            <table>
+                <tr><td>Escudero</td><td>$15k</td></tr>
+                <tr><td>Terremoto</td><td>$20k</td></tr>
+            </table>
+        </article>
+
+    </div>
+</section>
+
+<!-- PEDIDO -->
+<section id="pedido" class="section-container">
+    <h2> Haz tu pedido</h2>
+
+    <form class="form-style" id="formPedido">
+
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" placeholder="Tu nombre" required>
+
+        <label for="producto">Tipo de producto:</label>
+        <select id="producto" required>
+            <option value="">Selecciona</option>
+            <option value="hamburguesa">Hamburguesa</option>
+            <option value="picada">Picada</option>
+        </select>
+
+        <label for="detalle">Producto:</label>
+        <select id="detalle" required disabled>
+            <option value="">Primero elige el tipo</option>
+        </select>
+
+        <button type="submit">Enviar pedido</button>
+    </form>
+
+    <p id="mensaje"></p>
+</section>
+
+</main>
+
+<footer>
+    <p>© 2026 Operación Hambre App - Startup tecnológica</p>
+</footer>
+
+<!-- JS -->
+<script src="script.js"></script>
+
+</body>
+</html>
